@@ -12,7 +12,7 @@ body {
 }
 
 .logo {
-    width: 50px;
+    width: 90px;
 }
 
 .main-header {
@@ -20,10 +20,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-right: 30px;
     flex-wrap: wrap;
 }
+
+
+
 
 #search {
     display: flex;
@@ -34,13 +37,16 @@ body {
     border-radius: 15px;
     overflow: hidden;
     align-self: self-end;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    
 
 }
 
 #search input {
     flex: 1;
     padding: 5px;
+    
+    
 }
 
 #search button {
@@ -48,12 +54,14 @@ body {
     background-color: var(--alloy-orange);
     color: var(--isabelline);
     border: 1px solid transparent;
+    align-self: flex-start ;
 }
 
 .main-navigation {
     display: flex;
     flex-direction: row;
-    align-self: flex-end;
+    align-self: center;
+   
     
 }
 .main-navigation a {
