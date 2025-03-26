@@ -1,9 +1,9 @@
 :root {
     /* CSS HSL */
-    --air-superiority-blue: hsla(201, 33%, 62%, 1);
-    --isabelline: hsla(20, 33%, 95%, 1);
-    --alloy-orange: hsla(26, 70%, 45%, 1);
-    --black: hsla(0, 0%, 0%, 1);
+    --air-superiority-blue: rgb(237, 247, 246);
+    --isabelline: rgb(245, 130, 130);
+    --alloy-orange: rgb(194, 236, 194);
+    --orange: rgb(245, 204, 91);
 }
 
 body {
@@ -12,11 +12,11 @@ body {
 }
 
 .logo {
-    width: 100px;
+    width: 50px;
 }
 
 .main-header {
-    background-color: var(--black);
+    background-color: var(--orange);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,13 +28,14 @@ body {
 #search {
     display: flex;
     flex-direction: row;
-    min-width: 30vw;
+    min-width: 40vw;
     max-width: 100vw;
     border: 1px solid var(--alloy-orange);
-    border-radius: 5px;
+    border-radius: 15px;
     overflow: hidden;
-    align-self: flex-end;
+    align-self: self-end;
     margin-bottom: 10px;
+
 }
 
 #search input {
@@ -53,6 +54,7 @@ body {
     display: flex;
     flex-direction: row;
     align-self: flex-end;
+    
 }
 .main-navigation a {
     color: var(--isabelline);
@@ -62,3 +64,12 @@ body {
 .main-navigation a:hover {
     background-color: var(--alloy-orange);
 }
+
+.menu-button {
+     font-size:24px;
+     background-color: rgba(81, 145, 95, 0.897);
+     color: var (--alloy-orange);
+     border:5px solid var(rgb(206, 240, 241));
+     border-radius: 7px;
+}
+
