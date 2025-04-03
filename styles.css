@@ -16,11 +16,13 @@ body {
 }
 
 .logo1 {
-    height: 32rem;
+    height: 21rem;
     border-radius: 30px;
     justify-content: center;
-    margin: 30px;
-    border: 12px solid rgb(203, 106, 248);
+    border: 12px solid rgb(242, 232, 247);
+    margin-right: 5em;
+    margin-left: 2em;
+    margin-top: 2em;
 }
 
 .main-header {
@@ -80,7 +82,7 @@ body {
     display: flex;
     flex-direction: row;
     align-self: center;
-    background-color: var(--alloy-orange);
+    background-color: rgb(243, 211, 239);
     justify-content: flex-end  ;   
 }
 .main1-navigation a {
@@ -116,9 +118,14 @@ border-radius: 3rem;
 background-position: center;
 background-repeat: no-repeat;
 background-size: auto 100%;
+border: 5px solid rgb(117, 86, 133);
 transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 }
 .galery > div:hover {
     flex: 5;
 } 
 
+.top1 {
+    color:rgb(117, 86, 133);
+    margin-left: 2em;
+}
