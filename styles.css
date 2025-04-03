@@ -1,18 +1,26 @@
 :root {
     /* CSS HSL */
     --air-superiority-blue: rgb(237, 247, 246);
-    --isabelline: rgb(245, 130, 130);
-    --alloy-orange: rgb(194, 236, 194);
-    --orange: rgb(245, 204, 91);
+    --isabelline: rgb(114, 7, 7);
+    --alloy-orange: rgb(205, 237, 250);
+    --orange: rgba(245, 115, 40, 0.904);
 }
 
 body {
-    background-color: var(--air-superiority-blue);
+    background-color: rgba(253, 189, 189, 0.63);
     margin: 0px;
 }
 
 .logo {
     width: 90px;
+}
+
+.logo1 {
+    height: 32rem;
+    border-radius: 30px;
+    justify-content: center;
+    margin: 30px;
+    border: 12px solid rgb(203, 106, 248);
 }
 
 .main-header {
@@ -25,9 +33,6 @@ body {
     flex-wrap: wrap;
 }
 
-
-
-
 #search {
     display: flex;
     flex-direction: row;
@@ -38,9 +43,7 @@ body {
     overflow: hidden;
     align-self: self-end;
     margin-bottom: 5px;
-    
-
-}
+    }
 
 #search input {
     flex: 1;
@@ -60,24 +63,62 @@ body {
 .main-navigation {
     display: flex;
     flex-direction: row;
-    align-self: center;
-   
-    
+    align-self: center;   
 }
+
+
 .main-navigation a {
     color: var(--isabelline);
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
 }
 .main-navigation a:hover {
     background-color: var(--alloy-orange);
 }
 
+.main1-navigation {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    background-color: var(--alloy-orange);
+    justify-content: flex-end  ;   
+}
+.main1-navigation a {
+    color: var(--isabelline);
+    text-decoration: none;
+    padding: 5px;
+}
+.main1-navigation a:hover {
+    background-color: gainsboro;
+}
+
 .menu-button {
      font-size:24px;
-     background-color: rgba(81, 145, 95, 0.897);
+     background-color: var(--air-superiority-blue);
      color: var (--alloy-orange);
      border:5px solid var(rgb(206, 240, 241));
      border-radius: 7px;
 }
+
+
+
+.galery {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    justify-content: flex-start  ; 
+
+}
+
+.galery > div {
+flex:1;
+border-radius: 3rem;
+background-position: center;
+background-repeat: no-repeat;
+background-size: auto 100%;
+transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.galery > div:hover {
+    flex: 5;
+} 
 
