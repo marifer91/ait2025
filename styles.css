@@ -130,20 +130,32 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 
 
 .top1 {
-    color: rgb(227, 230, 50);
-    border: black;
-    margin-left: 2em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(131, 24, 24);
+    margin-left: 4em;
+    font-family: 'Courier New', Courier, monospace;
+   
+    
+}
+.top1 > h1:hover  {
+
+    background-color: rgba(0, 0, 0, 0.884);
+    color: rgb(241, 235, 235);
+    flex-direction: row;
+    align-self: center;
+    justify-content: flex-start;
+    text-align: center;
+    min-width: 40vw;
+    max-width: 10vw;
+    border-radius: 10px;
 }
 
 .main-footer {
-    margin-top: 3em;
+    margin-top: 2em;
     padding: 1em;
-    min-height: 800px;
+    min-height: 150px;
     background-color: var(--alloy-orange);
-    
-    
 }
+
 .social {
     display: flex;
     flex-direction: row;
@@ -161,4 +173,70 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     color: var(--isabelline);
 }
 
+.cat2 {
+    color: rgb(131, 24, 24);
+    margin-left: 4em;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.container1 {
+       position: relative;
+       width: 1190px;
+       display: flex;
+       margin-left: 4em;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+       padding: 30px;
+       }
+
+.container1 .card {
+    position:relative;
+    max-width: 300px;
+    height: 215px;
+    flex-direction: row;
+    background-color: antiquewhite;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgb(0,0,0,0,5);
+    transition: 0.3s ease-in-out;
+}
+
+.container1 .card:hover {
+    height: 420px;
+    }
+.container1 .card .prod {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0,5);
+}
+.container1 .card .prod img {
+    max-width: 100%;
+    border-radius: 4px;
+    }
+.container1 .card .content1 {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container1 .card:hover .content1{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay:0.3s;
+    
+}
 
