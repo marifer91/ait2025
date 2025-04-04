@@ -4,10 +4,20 @@
     --isabelline: rgb(114, 7, 7);
     --alloy-orange: rgb(205, 237, 250);
     --orange: rgba(245, 115, 40, 0.904);
+    --nyanza: hsla(116, 55%, 89%, 1);
+--caribbean-current: hsla(184, 58%, 25%, 1);
+--mauve: hsla(269, 84%, 85%, 1);
+--palatinate: rgb(104, 34, 92);
+--prussian-blue: hsla(210, 53%, 15%, 1);
+--tropical-indigo: hsla(250, 89%, 78%, 1);
+--ash-gray: hsla(158, 20%, 81%, 1);
+--fire-engine-red: hsla(358, 65%, 46%, 1);
+
+
 }
 
 body {
-    background-color: rgba(253, 189, 189, 0.63);
+    background-color: var(--prussian-blue);
     margin: 0px;
 }
 
@@ -26,7 +36,7 @@ body {
 }
 
 .main-header {
-    background-color: rgb(209, 237, 247);
+    background-color:  var(--ash-gray);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,7 +92,7 @@ body {
     display: flex;
     flex-direction: row;
     align-self: center;
-    background-color: rgb(243, 211, 239);
+    background-color: rgb(243, 236, 242);
     justify-content: flex-end  ;   
 }
 .main1-navigation a {
@@ -108,29 +118,35 @@ body {
     display: flex;
     height: 15rem;
     gap: 1rem;
+    margin-left: 4em;
+    margin-right: 4em;
+    
     
 }
 
+
+
+
 .galery > div {
 flex:1;
-border-radius: 1rem ;
+border-radius: 3rem ;
 background-position: center;
 background-repeat: no-repeat;
-background-color: rgb(27, 10, 10);
+background-color: var(--mauve);
 background-size: auto 100%;
-border: 2px double rgb(117, 86, 133);
+border: 7px double var(--caribbean-current);
 
 transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 }
 .galery > div:hover {
-    flex: 5;
-    background-size: auto 85%;
+    flex: 2;
+    background-size: auto 90%;
     
 } 
 
 
 .top1 {
-    color: rgb(131, 24, 24);
+    color: var(--nyanza);
     margin-left: 4em;
     font-family: 'Courier New', Courier, monospace;
    
@@ -153,7 +169,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     margin-top: 2em;
     padding: 1em;
     min-height: 150px;
-    background-color: var(--alloy-orange);
+    background-color: var(--ash-gray);
 }
 
 .social {
@@ -177,7 +193,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     color: rgb(131, 24, 24);
     margin-left: 4em;
     font-family: 'Courier New', Courier, monospace;
-    
+    margin-left: 4em;
 }
 
 .container1 {
@@ -226,7 +242,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     margin-top: -140px;
     padding: 10px 15px;
     text-align: center;
-    color:black;
+    color:rgb(25, 5, 73);
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
@@ -236,7 +252,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     visibility: visible;
     opacity: 1;
     margin-top: -40px;
-    transition-delay:0.3s;
+    transition-delay:0.2s;
     
 }
 
