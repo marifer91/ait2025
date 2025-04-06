@@ -170,7 +170,16 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     padding: 1em;
     min-height: 150px;
     background-color: var(--ash-gray);
+    flex-direction: row;
+    align-items:center;
 }
+
+.info1 {
+    display: flex;
+    align-self: center;
+    justify-content:left ; 
+    }
+
 
 .social {
     display: flex;
@@ -190,7 +199,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 }
 
 .cat2 {
-    color: rgb(131, 24, 24);
+    color: rgb(223, 221, 221);
     margin-left: 4em;
     font-family: 'Courier New', Courier, monospace;
     margin-left: 4em;
