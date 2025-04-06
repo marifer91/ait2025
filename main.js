@@ -3,7 +3,7 @@
 function onLoad() {
   // select elements using querySelector
   const button = document.querySelector ('.menu-button')
-  const nav = document.querySelector('.main-navigation')
+  const nav = document.querySelector('.main1-navigation')
   
   // make the button listen for a click
   button.addEventListener("click", function() {

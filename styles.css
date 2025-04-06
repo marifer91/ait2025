@@ -265,3 +265,52 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     
 }
 
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+}
+.social a {
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--isabelline)
+}
+.copyright {
+    text-align: center;
+    color: var(--isabelline);
+}
+
+.contact {
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+}
+
+#map {
+    width: 100%;
+    border-radius: 10px;
+}
+#contact-form {
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+}
+#contact-form label {
+    display: block;
+    border-radius: 10px;
+}
+#contact-form input {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+#contact-form textarea {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    width: 550px;
+    height: 260px;
+}
+
