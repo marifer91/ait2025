@@ -7,7 +7,7 @@
     width: 100%;
 
    }
-   .main.navigation {
+   .main1.navigation {
     flex-wrap: wrap;
     max-height: 0px;
     overflow: hidden;
@@ -23,7 +23,7 @@
    }
 
 
-.main.navigation.open {
+.main1.navigation.open {
    max-height: 50vh;
    }
 
