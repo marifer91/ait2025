@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 
+<?php
+//include head section
+include "components/head.php";
+?>
+
 <head>
     <!-- head is for metadata -->
     <!-- title is the name of the document  -->
@@ -132,95 +137,46 @@
                 <i class="fa-solid fa-phone"></i>
                 
                 Contact
-            </a>        
+            </a>
+
+         
         </nav>
-    
-        <section class="contact">
-            <b><i><h1 class="h1">Contact Us by</h1></i></b>
-                  <p>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    &nbsp +61 401232345
-                </p> <br/>
-                    <p>
-                    <i class="fa-solid fa-phone-volume"></i>
-                    &nbsp AU: 1800 313 554 
-                    </p>
+
+        <section class="about">
+            <b><i><h1 class="h1">ABOUT US</h1></i></b>
+            <p>
+                <h2>Welcome to PROGEAR</h2>
+                <h2>Your Adventure Starts Here</h2>
+                </p>
+                <p>
+                    At PROGEAR, we believe in the power of movement, exploration, and performance. Founded in 2022 and proudly based in Sydney, Australia, our mission is to provide high-quality sportswear and outdoor apparel for athletes, adventurers, and everyday explorers.
+                    Whether you're training for your next marathon, hiking through the Blue Mountains, or simply enjoying an active lifestyle, we’ve got the gear to keep you moving. Our wide range of products includes:
+                </p>
+
+                    <dd> + Wear for running, training, and yoga</dd>
+                    <dd>+ Durable hiking and camping apparel</dd>
+                    <dd>+ Eco-friendly and breathable fabrics</dd>
+                    <dd>+ Stylish everyday sportswear</dd>
                     
+                    <p>What sets us apart is our commitment to quality, functionality, and sustainable practices. We partner with local suppliers and use responsibly sourced materials to ensure our products not only perform well but also support a healthier planet.
+                      
+                      </p>
+                    <h3>
+                        Join the PROGEAR community and take your adventure to the next level.
+                    </h3>
+            </p>
 
-            <b><i><h1>Our Location</h1></b>
-
-                <i class="fa-solid fa-map-location-dot"></i> <br/>
-                <br/>
-            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.3017990638295!2d151.1926181765805!3d-33.88188041973795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae2919221809%3A0x632437ffb309dcce!2s7%20Kelly%20St%2C%20Ultimo%20NSW%202007!5e0!3m2!1sen!2sau!4v1743580695994!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <b><h1>Get in touch</h1></i></b>
-
-            <div class="contact1-form">
-
-            <form id="contact-form">
-                <b><label for="name">Your name</label></b>
-                <input type="text" id="name" name="name" placeholder="Jane Smith"></br>
-               <b><label for="email">Your email address</label><b>
-                <input type="email" id="email" name="email" placeholder="janesmith@example.com"></br>
-               <b> <label for="message">Your message</label></br></b>
-                <textarea id="message" name="message" cols="30" rows="5" placeholder="hey there"></textarea>
-            </br>
-            <button type="reset">Cancel</button>
-               <button type="submit">Submit</button> 
-            </form>
-
-            </div>
 
         </section>
 
+
+
+
     </main>
+      <?php include "components/footer.php"?>
 
-
+      
+        
 </body>
-
-<footer class="colorfoo">
-    
-    
-    <div class="info1">
-       <dl>
-        <b><dd>SUPPORT</dd></b><br/>
-        <dd>Help & Customer Service</dd>
-         <dd>FAQs</dd>
-         <dd>Promotions</dd>
-         <dd>Delivery</dd>
-         <dd>Returns & Refunds</dd>
-         <dd>Students</dd>
-     </dl>
-      <div >
-         <dl><b><dd>COMPANY INFO</dd></b><br/>
-         <dd>About Us</dd>
-         <dd>Careers</dd>
-         <dd>Press</dd>
-         <dd>Delivery</dd>
-         <dd>Returns & Refunds</dd>
-         <dd>Sustainability</dd>
-         </dl> 
-     </div>       
-         
-    </div>
-    <div class="main-footer">
-    <nav class="social">
-        <a href="https://facebook.com">
-            <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://instagram.com">
-            <i class="fa-brands fa-square-instagram"></i>
-        </a>
-        <a href="https://tiktok.com">
-            <i class="fa-brands fa-tiktok"></i>
-        </a>
-    </nav>
-    <p class="copyright">&copy; Pro Grear Hub 2025. All rights reserved.</p>
-
-    </div>
-
-   
-    
-</footer>
-
 
 </html>

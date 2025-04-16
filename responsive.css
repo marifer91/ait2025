@@ -23,10 +23,12 @@
    }
    .logo1 {
       max-height: auto;
-   
+        margin: auto;
+        height: auto;
+        box-sizing: border-box;
    }
 
-   .main1.navigation.open {
+   .main1-navigation.open {
        max-height: 50vh;
    }
    .cat2 {

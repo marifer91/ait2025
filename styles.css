@@ -21,6 +21,10 @@ body {
     margin: 0px;
 }
 
+img {
+    max-width: 100%;
+}
+
 .logo {
     width: 90px;
 }
@@ -110,6 +114,7 @@ body {
      color: var (--alloy-orange);
      border:5px solid var(rgb(206, 240, 241));
      border-radius: 7px;
+     display: none;
 }
 
 
