@@ -1,148 +1,36 @@
 <?php
-include "scr/database.php";
-?>
+include "src/database.php";
 
+// handle POST request from contact form
+if ( $_SERVER["REQUEST_METHOD"] == "POST" ) {
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
+    // query to insert into contact_us table
+    $query = "
+    INSERT INTO contact_us
+    (name,email,subject,message)
+    VALUES
+    ('kai','kai@hotmail.com','hello there','you have a nice day')
+    ";
+}
+?>
 
 <!DOCTYPE html>
 <html>
 <?php
 //include head section
-include "components/head.php";
-?>
+include "components/head.php"; ?>
 
-<head>
-    <!-- head is for metadata -->
-    <!-- title is the name of the document  -->
-    <title>||PROGEAR||</title>
-    <!-- icon for page -->
-    <link rel="icon" href="icon-transparent.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script scr="main.js"></script>
-</head>
 
 <body>
 
-    <header class="main-header">
+    <?php include "components/header.php"; ?> 
 
-        <button  type = "button" class = "menu-button">
-            <i class="fa-solid fa-bars"></i>
-     </button>
-
-        <a href="index.html">
-            <img class="logo" src="images/PGHlogo.png">
-        </a>
-        
-
-     
-    <div class="search">
-
-        <form id="search">
-            <input type="search" name="search" placeholder="type your search">
-            <button type="submit" name="search-button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </form>
-    </div>
-
-
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-</div>
-<div class="">
-
-</div>
-<div class="">
-
-</div>
-<div class="">
-
-</div>
-<div class="">
-
-</div>
-    
-        <nav class="main-navigation">
-            <a href="track.html">
-            <i class="fa-solid fa-truck-fast"></i>
-                <br />
-                Track
-            </a>
-            <a href="store.html" >
-               <i class="fa-solid fa-envelope"></i>
-                <br />
-                  Store
-            </a>
-            <a href="cart.html">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <br />
-                 Cart             
-            </a>
-            <a href="login.html">
-                <i class="fa-solid fa-user"></i>  <br />
-                    Login
-            </a>
-        </nav>
-    
-    </header>
+   
     <main>
 
-        <nav class="main1-navigation">
-            <a href="index.html">
-                <i class="fa-solid fa-tent"></i>
-                Home
-            </a>
-
-            <a href="products.html">
-                <i class="fa-solid fa-tags"></i>    
-                Products
-            </a>
-
-            <a href="about.html">
-                <i class="fa-solid fa-bullhorn"></i>
-                
-                 About
-            </a>
-           
-            <a href="contact.html">
-                <i class="fa-solid fa-phone"></i>
-                
-                Contact
-            </a>        
-        </nav>
+        <?php include "components/nav.php"; ?> 
     
         <section class="contact">
             <b><i><h1 class="h1">Contact Us by</h1></i></b>
@@ -165,7 +53,7 @@ include "components/head.php";
 
             <div class="contact1-form">
 
-            <form id="contact-form">
+            <form id="contact-form" action="contact.php" method="post">
                 <b><label for="name">Your name</label></b>
                 <input type="text" id="name" name="name" placeholder="Jane Smith"></br>
                <b><label for="email">Your email address</label><b>
@@ -186,8 +74,5 @@ include "components/head.php";
     <?php include "components/footer.php"?>
 
 </body>
-
-
-
 
 </html>

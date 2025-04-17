@@ -6,141 +6,15 @@
 include "components/head.php";
 ?>
 
-<head>
-    <!-- head is for metadata -->
-    <!-- title is the name of the document  -->
-    <title>||PROGEAR||</title>
-    <!-- icon for page -->
-    <link rel="icon" href="icon-transparent.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script scr="main.js"></script>
-</head>
+
 
 <body>
 
-    <header class="main-header">
+      <?php include "components/header.php"; ?> 
 
-        <button  type = "button" class = "menu-button">
-            <i class="fa-solid fa-bars"></i>
-     </button>
-
-        <a href="index.html">
-            <img class="logo" src="images/PGHlogo.png">
-        </a>
-        
-
-     
-    <div class="search">
-
-        <form id="search">
-            <input type="search" name="search" placeholder="type your search">
-            <button type="submit" name="search-button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </form>
-    </div>
-
-
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-</div>
-<div class="">
-
-</div>
-<div class="">
-
-</div>
-<div class="">
-
-</div>
-<div class="">
-
-</div>
-    
-        <nav class="main-navigation">
-            <a href="track.html">
-            <i class="fa-solid fa-truck-fast"></i>
-                <br />
-                Track
-            </a>
-            <a href="store.html" >
-               <i class="fa-solid fa-envelope"></i>
-                <br />
-                  Store
-            </a>
-            <a href="cart.html">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <br />
-                 Cart             
-            </a>
-            <a href="login.html">
-                <i class="fa-solid fa-user"></i>  <br />
-                    Login
-            </a>
-        </nav>
-    
-    </header>
     <main>
-
-        <nav class="main1-navigation">
-            <a href="index.html">
-                <i class="fa-solid fa-tent"></i>
-                Home
-            </a>
-
-            <a href="products.html">
-                <i class="fa-solid fa-tags"></i>    
-                Products
-            </a>
-
-            <a href="about.html">
-                <i class="fa-solid fa-bullhorn"></i>
-                
-                 About
-            </a>
-           
-            <a href="contact.html">
-                <i class="fa-solid fa-phone"></i>
-                
-                Contact
-            </a>
-
-         
-        </nav>
+        <?php include "components/nav.php"; ?> 
+        
 
         <section class="about">
             <b><i><h1 class="h1">ABOUT US</h1></i></b>
