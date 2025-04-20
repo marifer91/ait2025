@@ -27,10 +27,12 @@ include "components/head.php";
 
             </div>
 
-            <div class="content1">
-                <h1>SOCCER</h1>
+           
+            <div  class="content1">
+            <a href="details.php">  <h1>SOCCER</h1></a>
                 <p>Play with passion, wear it with pride. Our soccer apparel is built for performance, comfort, and style—on and off the field. From training gear to game-day essentials, find the perfect fit to elevate your game.</p>
             </div>
+            
                  
         </div>
 

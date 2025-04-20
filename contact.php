@@ -5,15 +5,21 @@ include "src/database.php";
 if ( $_SERVER["REQUEST_METHOD"] == "POST" ) {
     $name = $_POST["name"];
     $email = $_POST["email"];
+    $subject = $_POST["subject"];
     $message = $_POST["message"];
+    // echo $name . $email . $message;
     // query to insert into contact_us table
     $query = "
     INSERT INTO contact_us
     (name,email,subject,message)
     VALUES
-    ('kai','kai@hotmail.com','hello there','you have a nice day')
+    (?,?,?,?)
     ";
+    $statement = $connection -> prepare($query);
+    $statement -> bind_param("ssss",$name,$email,$subject,$message);
+    $statement -> execute();
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -58,7 +64,9 @@ include "components/head.php"; ?>
                 <input type="text" id="name" name="name" placeholder="Jane Smith"></br>
                <b><label for="email">Your email address</label><b>
                 <input type="email" id="email" name="email" placeholder="janesmith@example.com"></br>
-               <b> <label for="message">Your message</label></br></b>
+                <label for="subject">Subject</label>
+                <input type="text" id= "subject" name="subject" placeholder="Greetings">
+                <b> <label for="message">Your message</label></br></b>
                 <textarea id="message" name="message" cols="30" rows="5" placeholder="hey there"></textarea>
             </br>
             <button type="reset">Cancel</button>
