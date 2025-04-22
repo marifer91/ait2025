@@ -18,7 +18,7 @@ include "components/head.php";
     
             <div class = "containerdetails" >
             <div class = "shoesdetails">
-              <img src="images/shoess.png" alt="">
+              <div class ="shoesimagen"><img src="images/shoess.png" alt=""></div>
                 <div class ="slideshow-buttons">
                     <span></span>
                     <span class = "focus"></span>
@@ -38,13 +38,14 @@ include "components/head.php";
                 </div>
             </div>
             <div class = "product2">
-                <p>Women's Running Shoe</p>
-                <h1>Nike Epic React Flyknit</h1>
-                <h2>$ 150</h2>
-                <p class= "description">
-                    The Nike Epic React Flyknit foam cushioning is resonsive yet light-weight, durable yet soft.
-                    This creates a sensation that not only enhances the feeling of moving forward.
-                </p>
+                <p > &nbsp Women's Running Shoe</p> 
+                <h1> &nbsp Nike Epic React Flyknit</h1>
+                <h2> &nbsp $ 150</h2>
+                  <p class= "description">
+                    &nbsp The Nike Epic React Flyknit foam cushioning is resonsive yet light-weight, durable yet soft.
+                    &nbsp This creates a sensation that not only enhances the feeling of moving forward.
+                  </p>
+                  
                 <div class="buttons">
                     <button class="add">Add to Cart </button>
                     <button class = "like">

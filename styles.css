@@ -358,12 +358,18 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 
 /* code datils */
 
+.shoesimagen {
+    border-radius: 10px;
+    border: 12px;
+}
+
 .containerdetails {
 
     display: flex;
+    margin: 4vw;
     justify-content: center;
     width: 35em;
-    background: var(--rose);
+    background: var(--white);
     box-shadow: 5px 5px 15px rgba(233, 228, 228, 0.5);
     border-radius: 10px;
     padding: 1em;
@@ -377,10 +383,12 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
    }
 
  .shoesdetails {
+
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
-
+    justify-content: space-around;
+    border-radius: 10px;
+ }
     & img{
         width: 20em;
     }
@@ -389,6 +397,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
         display: flex;
         justify-content: center;
         gap: 1em;
+        border-radius: 10px;
 
         & span {
             width: 7px;
@@ -430,7 +439,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
             color: var(--white);
         }
     }
- }
+ 
 
  .product2 {
     display: flex;
