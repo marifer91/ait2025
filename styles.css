@@ -358,10 +358,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 
 /* code datils */
 
-.shoesimagen {
-    border-radius: 10px;
-    border: 12px;
-}
+
 
 .containerdetails {
 
@@ -369,7 +366,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     margin: 4vw;
     justify-content: center;
     width: 35em;
-    background: var(--white);
+    background: var(--light);
     box-shadow: 5px 5px 15px rgba(233, 228, 228, 0.5);
     border-radius: 10px;
     padding: 1em;
@@ -377,9 +374,10 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     }
 
  .description {
-    font-size: 0.6em;
-    color: var(--white);
+    font-size: 10em;
+    color: var(--dark);
     letter-spacing: 1px;
+    text-align: center;
    }
 
  .shoesdetails {
@@ -387,11 +385,15 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    border-radius: 10px;
+    
  }
-    & img{
-        width: 20em;
-    }
+   .shoesimagen{
+    width: 16em;
+    border-radius: 10px;
+    margin-left: 1em;
+    
+
+   }
 
     & .slideshow-buttons {
         display: flex;
@@ -403,41 +405,40 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
             width: 7px;
             height: 7px;
             border-radius: 50%;
-            background: var(--light);
+            background: var(--dark);
         }
         & .focus1 {
-            background: var(--rose);
+            background: var(--white);
         }
     }
-    & .pick {
+        & .pick {
         text-transform: uppercase;
-    }
-    & .sizes {
+        }
+        & .sizes {
         display: flex;
         justify-content: flex-start;
         gap: 0.4em;
 
         & span {
-            border: 1px solid var(--light);
+            border: 1px solid var(--dark);
             width: 24px;
             height: 24px;
             display: flex;
             align-items: center ;
             justify-content: center;
             padding: 2px;
-            font-size: 0.7em;
-
-            & .hover{
-                background: var(--rose);
-                color: var(--white);
-                transition: all 0.4s ease-in-out;
-            }
+            font-size: 0.7em;     
         }
-
-        & .focus {
+        & .focus1 {
             background: var(--rose);
             color: var(--white);
         }
+
+        & :hover {
+            background-color: var(--tropical-indigo);
+            
+        }
+         
     }
  
 
@@ -447,19 +448,23 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     justify-content: space-between;
     border-radius: 10px;
 
-    & p{
+    & p {
         text-transform: uppercase;
+        font-weight: bold;
     }
 
     & h1{
         font-size: 1.2em;
-        color: var(--dark);
+        color: brown;
         margin-top: -5px;
+        text-align: justify;
+
         }
 
     & h2 {
-        color: var(--tan);
+        color: var(--dark);
         margin-top: -5px;
+        text-align: justify;
     }
 
     & .description {
@@ -470,6 +475,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
         font-size: 0.7em;
         line-height: 1.6em;
         text-align: justify;
+        padding: 2em;
     }
     & button {
         background: #cda9ac;
@@ -481,12 +487,9 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
         letter-spacing: 1px;
         color: var(--white);
         cursor: pointer;
+        
 
-        & :hover {
-            background: var(--rose);
-            transition: all 0.4s ease-in-out;            
-        }
-    }
+     }
 
     & .add {
         width: 67%;
@@ -495,5 +498,15 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     & .like {
         width: 22%;
     }
+
 }
+.buttonshere > .add:hover {
+    background: var(--dark);
+    flex: 2;
+}
+.buttonshere > .like:hover {
+    background: var(--dark);
+    flex: 2;
+}
+
 

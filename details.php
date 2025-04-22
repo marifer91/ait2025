@@ -18,10 +18,10 @@ include "components/head.php";
     
             <div class = "containerdetails" >
             <div class = "shoesdetails">
-              <div class ="shoesimagen"><img src="images/shoess.png" alt=""></div>
+              <img class= "shoesimagen" src="images/shoess.png" alt="">
                 <div class ="slideshow-buttons">
                     <span></span>
-                    <span class = "focus"></span>
+                    <span class = "focus1"></span>
                     <span></span>
                     <span></span>
                 </div>
@@ -30,27 +30,27 @@ include "components/head.php";
                 <span>5</span>
                 <span>6</span>
                 <span>7</span>
-                <span class ="focus1">8</span>
+                <span class ="focus1"> 8 </span>
                 <span>9</span>
                 <span>10</span>
                 <span>11</span>
-                <span>12</span>
+                <span>12</span></br></br>
                 </div>
             </div>
             <div class = "product2">
-                <p > &nbsp Women's Running Shoe</p> 
+                <b><p > &nbsp Women's Running Shoe</p> </b>
                 <h1> &nbsp Nike Epic React Flyknit</h1>
-                <h2> &nbsp $ 150</h2>
+                <h2> &nbsp $ 150 AUS</h2>
                   <p class= "description">
-                    &nbsp The Nike Epic React Flyknit foam cushioning is resonsive yet light-weight, durable yet soft.
-                    &nbsp This creates a sensation that not only enhances the feeling of moving forward.
+                    The Nike Epic React Flyknit foam cushioning is resonsive yet light-weight, durable yet soft.
+                    This creates a sensation that not only enhances the feeling of moving forward.
                   </p>
                   
-                <div class="buttons">
+                <div class="buttonshere">
+                  
                     <button class="add">Add to Cart </button>
-                    <button class = "like">
-                        <span>❤︎</span>
-                    </button>
+                    <button class = "like"> ❤︎ </button>
+                  
                 </div>
             </div>
          </div>
