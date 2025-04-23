@@ -399,7 +399,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
         display: flex;
         justify-content: center;
         gap: 1em;
-        border-radius: 10px;
+        border-radius: 5px;
 
         & span {
             width: 7px;
@@ -413,6 +413,8 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     }
         & .pick {
         text-transform: uppercase;
+        margin: 4em;
+        
         }
         & .sizes {
         display: flex;
@@ -479,25 +481,35 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     }
     & button {
         background: #cda9ac;
-        padding: 10px;
+        margin-bottom: 1px;
+        padding: 1px;
         display: inline-block;
         outline: 0;
-        border-radius: 2px;
+        border-radius: 6px;
         text-transform: uppercase;
         letter-spacing: 1px;
         color: var(--white);
         cursor: pointer;
-        
+        align-items:flex-end;  
+        margin: 6px;      
 
      }
 
     & .add {
-        width: 67%;
+        width: 60%;
     }
 
     & .like {
         width: 22%;
     }
+
+    & .input {
+        width: 30%;
+        border-radius: 6px;
+    
+    }
+
+
 
 }
 .buttonshere > .add:hover {

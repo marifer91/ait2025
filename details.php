@@ -25,7 +25,7 @@ include "components/head.php";
                     <span></span>
                     <span></span>
                 </div>
-                <p class="pick">choose size</p>
+                <b><p class="pick">choose size</p></b>
                 <div class ="sizes">
                 <span>5</span>
                 <span>6</span>
@@ -48,7 +48,8 @@ include "components/head.php";
                   
                 <div class="buttonshere">
                   
-                    <button class="add">Add to Cart </button>
+                    <button class="add">Add to Cart </button></br>
+                    <input class= "input" type="text" id= "subject" name="subject" placeholder="Quantity">
                     <button class = "like"> ❤︎ </button>
                   
                 </div>
