@@ -362,7 +362,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 
 .containerdetails {
 
-    display: flex;
+   
     margin: 4vw;
     justify-content: center;
     width: 35em;
@@ -519,6 +519,11 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 .buttonshere > .like:hover {
     background: var(--dark);
     flex: 2;
+}
+
+.detailscontainer1 {
+    display: flex;
+
 }
 
 

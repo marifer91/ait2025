@@ -46,4 +46,19 @@
    #contact-form {
        width: 95vw;
    }
+
+   .containerdetails {
+    max-height: auto;
+      margin: auto;
+      height: auto;
+      box-sizing: border-box;
+ }
+ .shoesdetails {
+    max-height: auto;
+      margin: auto;
+      height: auto;
+      box-sizing: border-box;
+ }
+
+
 }
