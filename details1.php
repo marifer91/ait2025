@@ -11,12 +11,12 @@ price,
 image
 FROM products
 ";
-$statement = $connection -> prepare($query);
-$statement -> execute();
-$result = $statement -> get_result();
+$statement = $connection->prepare($query);
+$statement->execute();
+$result = $statement->get_result();
 $products = array();
-while( $row = $result -> fetch_assoc()){
-      array_push ( $products,$row );
+while ($row = $result->fetch_assoc()) {
+  array_push($products, $row);
 }
 ?>
 
@@ -33,22 +33,23 @@ include "components/head.php";
 
 <body>
 
-      <?php include "components/header.php"; ?> 
+  <?php include "components/header.php"; ?>
 
-    
-       <?php include "components/nav.php"; ?> 
-    
-    <main>
-    
-       <?php
-	     //output products 
-	     foreach ($products as $p){
-	        $image = $p["image"];
-	        $name = $p["name"];
-	        $description = $p["description"];
-	        $price = $p["price"];
-	     echo "
-          <div class= 'detailscontainer1'>
+
+  <?php include "components/nav.php"; ?>
+
+  <main>
+    <div class= "detailscontainer11">
+      <?php
+      //output products 
+      foreach ($products as $p) {
+        $image = $p["image"];
+        $name = $p["name"];
+        $description = $p["description"];
+        $price = $p["price"];
+        echo "
+        
+           <div class = 'card1' >
             <div class = 'shoesdetails'>
               <img class= 'shoesimagen' src='images/$image' alt=''>
                 <div class ='slideshow-buttons'>
@@ -86,20 +87,20 @@ include "components/head.php";
               </div>
             </div>
           </div>
-         </div>
         
-	 ";
-        }
-	 ?>
-    
-
-     
-    </main>
-
-       
         
+	     ";
+         }
+      ?>
+
+    </div>
+
+  </main>
+
+
+
 </body>
 
-<?php include "components/footer.php"?>
+<?php include "components/footer.php" ?>
 
 </html>

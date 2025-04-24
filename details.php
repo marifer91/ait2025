@@ -16,7 +16,7 @@ include "components/head.php";
     
        <?php include "components/nav.php"; ?> 
     
-<div class= "detailscontainer1">
+       <div class= "detailscontainer1">
             <div class = "containerdetails" >
             <div class = "shoesdetails">
               <img class= "shoesimagen" src="images/shoess.png" alt="">

@@ -360,17 +360,17 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 
 
 
-.containerdetails {
+.card1 {
 
    
-    margin: 4vw;
+    margin: 2em;
     justify-content: center;
-    width: 30em;
+    width: 25em;
     background: var(--light);
     box-shadow: 5px 5px 15px rgba(233, 228, 228, 0.5);
     border-radius: 10px;
-    padding: 1em;
     text-align: center;
+    padding: 5px;
  
     }
 
@@ -391,10 +391,8 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
    .shoesimagen{
     width: 16em;
     border-radius: 10px;
-    margin-left: 7em;
-    
-    
-
+    margin-left: 3.8em;
+    margin-top: 1em ;
    }
 
     & .slideshow-buttons {
@@ -415,7 +413,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     }
         & .pick {
         text-transform: uppercase;
-        margin: 2em;        
+        margin: 1em;        
         margin-top: 8px;
         
         }
@@ -534,6 +532,18 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 .detailscontainer1 {
     display: flex;
 
+}
+.detailscontainer11 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:-5px;
+    max-width: 90vw;
+    margin: 8px;
+    margin-top: 8px;
+}
+.card {
+    background-color: aqua;
+    padding: 15px;
 }
 
 
