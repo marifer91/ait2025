@@ -365,11 +365,12 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
    
     margin: 4vw;
     justify-content: center;
-    width: 35em;
+    width: 30em;
     background: var(--light);
     box-shadow: 5px 5px 15px rgba(233, 228, 228, 0.5);
     border-radius: 10px;
     padding: 1em;
+    text-align: center;
  
     }
 
@@ -390,7 +391,8 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
    .shoesimagen{
     width: 16em;
     border-radius: 10px;
-    margin-left: 1em;
+    margin-left: 7em;
+    
     
 
    }
@@ -405,7 +407,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
             width: 7px;
             height: 7px;
             border-radius: 50%;
-            background: var(--dark);
+            background: var(--dark);    
         }
         & .focus1 {
             background: var(--white);
@@ -413,13 +415,15 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     }
         & .pick {
         text-transform: uppercase;
-        margin: 4em;
+        margin: 2em;        
+        margin-top: 8px;
         
         }
         & .sizes {
         display: flex;
         justify-content: flex-start;
         gap: 0.4em;
+        margin-left: 5em;
 
         & span {
             border: 1px solid var(--dark);
@@ -428,8 +432,9 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
             display: flex;
             align-items: center ;
             justify-content: center;
-            padding: 2px;
+            padding: 4px;
             font-size: 0.7em;     
+            margin-top: -1px;
         }
         & .focus1 {
             background: var(--rose);
@@ -452,20 +457,21 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 
     & p {
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight: bold;        
+        margin-top: 10px;
     }
 
     & h1{
         font-size: 1.2em;
         color: brown;
-        margin-top: -5px;
+        margin-top: -4px;
         text-align: justify;
 
         }
 
     & h2 {
         color: var(--dark);
-        margin-top: -5px;
+        margin-top: -4px;
         text-align: justify;
     }
 
@@ -476,35 +482,39 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
         color: var(--dark);
         font-size: 0.7em;
         line-height: 1.6em;
+        padding: 4px;
         text-align: justify;
-        padding: 2em;
     }
     & button {
+
         background: #cda9ac;
-        margin-bottom: 1px;
-        padding: 1px;
+        margin-bottom: 0.5px;
         display: inline-block;
         outline: 0;
         border-radius: 6px;
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
         color: var(--white);
         cursor: pointer;
-        align-items:flex-end;  
-        margin: 6px;      
+        text-align: center;
+        margin-left: 2%;
+        justify-content: center;
 
      }
 
     & .add {
-        width: 60%;
+        width: 24%;
+        height: 24px;
     }
 
     & .like {
-        width: 22%;
+        width: 10%;
+        height: 24px;
     }
 
     & .input {
-        width: 30%;
+        width: 60px;
+        height: 24px;
         border-radius: 6px;
     
     }
