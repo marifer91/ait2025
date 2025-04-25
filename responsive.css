@@ -60,5 +60,12 @@
       box-sizing: border-box;
  }
 
+ .detailscontainer11{
+       flex-wrap: wrap;
+       max-height: 1px;
+ }
+ 
+
+
 
 }

@@ -363,7 +363,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 .card1 {
 
    
-    margin: 2em;
+    margin: 1em;
     justify-content: center;
     width: 25em;
     background: var(--light);
@@ -389,7 +389,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     
  }
    .shoesimagen{
-    width: 16em;
+    width: 17em;
     border-radius: 10px;
     margin-left: 3.8em;
     margin-top: 1em ;
@@ -422,6 +422,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
         justify-content: flex-start;
         gap: 0.4em;
         margin-left: 5em;
+        margin-inline-end:  3em;
 
         & span {
             border: 1px solid var(--dark);
@@ -476,17 +477,18 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     & .description {
         text-transform: none;
         letter-spacing: 0;
-        margin-bottom: 17px;
+        margin-bottom: 2px;
         color: var(--dark);
         font-size: 0.7em;
         line-height: 1.6em;
-        padding: 4px;
+        padding: 8px;
         text-align: justify;
+        margin-top: -9px;
     }
     & button {
 
         background: #cda9ac;
-        margin-bottom: 0.5px;
+        margin-bottom: 0.5px;   
         display: inline-block;
         outline: 0;
         border-radius: 6px;
@@ -496,12 +498,12 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
         cursor: pointer;
         text-align: center;
         margin-left: 2%;
-        justify-content: center;
+        justify-content: start;
 
      }
 
     & .add {
-        width: 24%;
+        width: 46%;
         height: 24px;
     }
 
@@ -523,6 +525,7 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 .buttonshere > .add:hover {
     background: var(--dark);
     flex: 2;
+    
 }
 .buttonshere > .like:hover {
     background: var(--dark);
@@ -536,14 +539,15 @@ transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 .detailscontainer11 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap:-5px;
-    max-width: 90vw;
-    margin: 8px;
-    margin-top: 8px;
+    gap: 0.2px;
+    max-width: 0.5vw;
+    margin: 3px;
+    align-items: center;
+    
 }
 .card {
     background-color: aqua;
-    padding: 15px;
+    padding: 9px;
 }
 
 
